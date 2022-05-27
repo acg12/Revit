@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Revit</string>
+    <!-- Login Activity -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">WELCOME</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_desc">Sign in to continue</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="no_account">Don\'t have an account?\ </string>
+    <string name="btn_sign_up">Sign up here.</string>
+    <string name="sign_in_google">Or, sign in with:</string>
+
+    <!--    Register Activity -->
+    <string name="sign_up">CREATE AN ACCOUNT</string>
+    <string name="sign_up_desc">Sign up to continue</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_conf_password">Confirm Password</string>
+    <string name="submit_sign_up">Sign Up</string>
+    <string name="have_account">Already have an account?\ </string>
+    <string name="btn_sign_in">Sign in here.</string>
+
+    <!--    Nav Bar -->
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="new_thread">New Thread</string>
+
+    <!--    Main App Bar -->
+    <string name="notifications">Notifications</string>
+
+    <!--    Profile App Bar-->
+    <string name="settings">Settings</string>
+
+    <!--    New Thread -->
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="tags">Tags \(separated by comma\)</string>
+    <string name="btn_create_thread">Create New Thread</string>
+    <string name="btn_cancel_thread">Cancel</string>
+    <string name="btn_pick_image">Upload\nCover Image</string>
+
+    <!--    Recycler view labels -->
+    <string name="recycler_popular">Most Popular</string>
+    <string name="recycler_recent">Recent</string>
+    <string name="just_tags">Tags:</string>
+    <string name="dummy_comment">0 comments</string>
+    <string name="dummy_date">04/01/2022</string>
+    <string name="dummy_comment_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor consequat ante, et pharetra neque interdum id. Phasellus tempor vehicula gravida. Ut fringilla laoreet diam in bibendum.</string>
+
+    <!--    Thread details -->
+    <string name="hint_comment">Add a comment</string>
+
+    <!--    Edit comment dialog -->
+    <string name="edit_comment">Edit Comment</string>
+
+    <!--    Search Fragment -->
+    <string-array name="filter_choices">
+        <item>None</item>
+        <item>Last 24 Hours</item>
+        <item>This Week</item>
+        <item>This Month</item>
+        <item>This Year</item>
+    </string-array>
+    <string name="sort">SORT</string>
+    <string name="filter">FILTER</string>
+    <string-array name="sort_choices">
+        <item>None</item>
+        <item>Most saved</item>
+        <item>Most comments</item>
+    </string-array>
+
+    <!--    Card search results -->
+    <string name="dummy_title">Me Before You was overrated.</string>
+    <string name="dummy_desc">What did you guys think?</string>
+    <string name="dummy_tags">Tags: mebeforeyou, romance</string>
+    <string name="dummy_comment_count">74 comments</string>
+
+    <!--    Edit thread page -->
+    <string name="edit_thread">Edit Thread</string>
+    <string name="edit_prof_pic">Edit Profile Picture</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="saved_threads">Saved threads</string>
+    <string name="comments">Comments</string>
+    <string name="liked_comments">Liked comments</string>
+    <string name="logout">Log out</string>
+    <string name="save">Save</string>
+
+    <!--    Settings-->
+    <string name="change_password">Change password</string>
+    <string name="old_password">Input old password</string>
+    <string name="new_password">Input new password</string>
+    <string name="conf_password">Confirm new password</string>
+
+<!--    Card notification -->
+    <string name="dummy_notif">user123 liked your comment.</string>
+    <string name="dummy_notif_date">1w</string>
+    <string name="dummy_comm_preview">This is an amazing book. Everyone has to have a copy of this at home. RIGHT NOW.</string>
+
+<!--    Notification adapter -->
+    <string name="no_comment">Comment not found.</string>
+
+<!--   Notifications-->
+    <string name="years">%dy</string>
+    <string name="weeks">%dw</string>
+    <string name="days">%dd</string>
+    <string name="hours">%dh</string>
+    <string name="mins">%dm</string>
+    <string name="sec">%ds</string>
+</resources>

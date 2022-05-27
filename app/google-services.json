@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "843503562390",
+    "project_id": "revitapp-7bcaf",
+    "storage_bucket": "revitapp-7bcaf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843503562390:android:e7673a733fcefaec665cb7",
+        "android_client_info": {
+          "package_name": "com.example.revit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "843503562390-k9argu4v8o8aq79p1vo5dtg15hdv0q40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoSQgMcgPRgcS5Szepr0dlyiq1pTVuTpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "843503562390-k9argu4v8o8aq79p1vo5dtg15hdv0q40.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

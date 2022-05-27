@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/light_gray"
+    app:cardCornerRadius="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/card_thread">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@color/text_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ImageRound" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="User123"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/profilePicture"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/commentBody"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/dummy_comment_body"
+            app:layout_constraintStart_toEndOf="@+id/profilePicture"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/dummy_date"
+            android:textColor="@color/text_gray"
+            app:layout_constraintEnd_toStartOf="@+id/time"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="13:41"
+            android:textColor="@color/text_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transparent"
+            android:src="@drawable/delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commentBody"
+            app:tint="@color/main_blue" />
+
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_add"
+            app:layout_constraintStart_toEndOf="@+id/btnDelete"
+            app:layout_constraintTop_toBottomOf="@+id/commentBody"
+            app:tint="@color/main_blue" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layoutLikeCount"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="8dp"
+            app:contentPadding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commentBody">
+
+            <ImageButton
+                android:id="@+id/btnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/heart_outline" />
+
+            <TextView
+                android:id="@+id/likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="0"
+                android:translationX="25dp"
+                android:translationY="1dp" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

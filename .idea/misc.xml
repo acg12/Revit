@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.184" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/drawable/comment_prev_background.xml" value="0.179" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.183" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/drawable/ic_launcher_background.xml" value="0.184" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/drawable/ic_logo_background.xml" value="0.1545" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/drawable/ic_new_google_favicon.xml" value="0.184" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/drawable/ic_settings.xml" value="0.183" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/drawable/searchview_background.xml" value="0.183" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/drawable/settings.xml" value="0.183" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/drawable/submit.xml" value="0.183" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/activity_create_thread.xml" value="0.3333333333333333" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/activity_main_admin.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/activity_register.xml" value="0.14666666666666667" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/card_comment.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/card_notification.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/card_search_result.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/card_thread.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/edit_comment_dialog.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_change_password.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_comments.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_edit_thread.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_home.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_liked_comments.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_new_thread.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_notifications.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_profile.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_saved_threads.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_search.xml" value="0.3333333333333333" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_settings.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/fragment_thread_detail.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/layout/searchview_background.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/menu/main_app_bar.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/menu/nav_menu.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/menu/nav_menu_admin.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/menu/new_thread_app_bar.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/menu/plain_app_bar.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/menu/profile_app_bar.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/menu/top_app_bar.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/mipmap-anydpi-v26/ic_logo.xml" value="0.1545" />
+        <entry key="..\:/AndroidStudioProjects/Revit/app/src/main/res/mipmap-anydpi-v26/ic_logo_round.xml" value="0.1545" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

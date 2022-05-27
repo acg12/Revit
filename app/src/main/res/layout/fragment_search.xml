@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentSearch">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/searchview_background"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/transparent"
+            android:queryHint="Search..."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/filter"
+            android:textColor="@color/text_gray"
+            app:layout_constraintStart_toStartOf="@+id/filterSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+        <Spinner
+            android:id="@+id/filterSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblFilter" />
+
+        <TextView
+            android:id="@+id/lblSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/sort"
+            android:textColor="@color/text_gray"
+            app:layout_constraintStart_toEndOf="@+id/lblFilter"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+        <Spinner
+            android:id="@+id/sortSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintStart_toEndOf="@+id/filterSpinner"
+            app:layout_constraintStart_toStartOf="@+id/lblSort"
+            app:layout_constraintTop_toBottomOf="@+id/lblSort" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filterSpinner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/page_home">
+
+    <fragment
+        android:id="@+id/page_home"
+        android:name="com.example.revit.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_page_home_to_page_search"
+            app:destination="@id/page_search" />
+        <action
+            android:id="@+id/action_page_home_to_page_profile"
+            app:destination="@id/page_profile" />
+        <action
+            android:id="@+id/action_page_home_to_page_new_thread"
+            app:destination="@id/page_new_thread" />
+        <action
+            android:id="@+id/action_page_home_to_fragmentThreadDetail"
+            app:destination="@id/fragmentThreadDetail" />
+        <action
+            android:id="@+id/action_page_home_to_fragmentNotifications"
+            app:destination="@id/fragmentNotifications" />
+    </fragment>
+    <fragment
+        android:id="@+id/page_search"
+        android:name="com.example.revit.FragmentSearch"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_page_search_to_page_home"
+            app:destination="@id/page_home" />
+        <action
+            android:id="@+id/action_page_search_to_page_profile"
+            app:destination="@id/page_profile" />
+        <action
+            android:id="@+id/action_page_search_to_page_new_thread"
+            app:destination="@id/page_new_thread" />
+        <action
+            android:id="@+id/action_page_search_to_fragmentThreadDetail"
+            app:destination="@id/fragmentThreadDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/page_profile"
+        android:name="com.example.revit.FragmentProfile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_page_profile_to_page_search"
+            app:destination="@id/page_search" />
+        <action
+            android:id="@+id/action_page_profile_to_page_home"
+            app:destination="@id/page_home" />
+        <action
+            android:id="@+id/action_page_profile_to_page_new_thread"
+            app:destination="@id/page_new_thread" />
+        <action
+            android:id="@+id/action_page_profile_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_page_profile_to_fragmentSavedThreads"
+            app:destination="@id/fragmentSavedThreads" />
+        <action
+            android:id="@+id/action_page_profile_to_fragmentComments"
+            app:destination="@id/fragmentComments" />
+        <action
+            android:id="@+id/action_page_profile_to_fragmentLikedComments"
+            app:destination="@id/fragmentLikedComments" />
+        <action
+            android:id="@+id/action_page_profile_to_fragmentSettings"
+            app:destination="@id/fragmentSettings" />
+    </fragment>
+    <fragment
+        android:id="@+id/page_new_thread"
+        android:name="com.example.revit.FragmentNewThread"
+        android:label="fragment_new_thread"
+        tools:layout="@layout/fragment_new_thread" >
+        <action
+            android:id="@+id/action_page_new_thread_to_page_home"
+            app:destination="@id/page_home" />
+        <action
+            android:id="@+id/action_page_new_thread_to_page_search"
+            app:destination="@id/page_search" />
+        <action
+            android:id="@+id/action_page_new_thread_to_page_profile"
+            app:destination="@id/page_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentThreadDetail"
+        android:name="com.example.revit.FragmentThreadDetail"
+        android:label="fragment_thread_detail"
+        tools:layout="@layout/fragment_thread_detail" >
+        <action
+            android:id="@+id/action_fragmentThreadDetail_to_page_new_thread"
+            app:destination="@id/page_new_thread" />
+        <action
+            android:id="@+id/action_fragmentThreadDetail_to_page_search"
+            app:destination="@id/page_search" />
+        <action
+            android:id="@+id/action_fragmentThreadDetail_to_page_profile"
+            app:destination="@id/page_profile" />
+        <action
+            android:id="@+id/action_fragmentThreadDetail_to_page_home"
+            app:destination="@id/page_home" />
+        <argument
+            android:name="threadId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentThreadDetail_to_fragmentEditThread"
+            app:destination="@id/fragmentEditThread" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEditThread"
+        android:name="com.example.revit.FragmentEditThread"
+        android:label="fragment_edit_thread"
+        tools:layout="@layout/fragment_edit_thread" >
+        <action
+            android:id="@+id/action_fragmentEditThread_to_fragmentThreadDetail"
+            app:destination="@id/fragmentThreadDetail" />
+        <argument
+            android:name="threadId"
+            app:argType="string" />
+    </fragment>
+    <activity
+        android:id="@+id/login"
+        android:name="com.example.revit.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/fragmentSavedThreads"
+        android:name="com.example.revit.FragmentSavedThreads"
+        android:label="fragment_saved_threads"
+        tools:layout="@layout/fragment_saved_threads" >
+        <action
+            android:id="@+id/action_fragmentSavedThreads_to_fragmentThreadDetail"
+            app:destination="@id/fragmentThreadDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentComments"
+        android:name="com.example.revit.FragmentComments"
+        android:label="fragment_comments"
+        tools:layout="@layout/fragment_comments" >
+        <action
+            android:id="@+id/action_fragmentComments_to_fragmentThreadDetail"
+            app:destination="@id/fragmentThreadDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLikedComments"
+        android:name="com.example.revit.FragmentLikedComments"
+        android:label="fragment_liked_comments"
+        tools:layout="@layout/fragment_liked_comments" >
+        <action
+            android:id="@+id/action_fragmentLikedComments_to_fragmentThreadDetail2"
+            app:destination="@id/fragmentThreadDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSettings"
+        android:name="com.example.revit.FragmentSettings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_fragmentSettings_to_fragmentChangePassword"
+            app:destination="@id/fragmentChangePassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentChangePassword"
+        android:name="com.example.revit.FragmentChangePassword"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/fragmentNotifications"
+        android:name="com.example.revit.FragmentNotifications"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" >
+        <action
+            android:id="@+id/action_fragmentNotifications_to_fragmentThreadDetail"
+            app:destination="@id/fragmentThreadDetail" />
+    </fragment>
+</navigation>

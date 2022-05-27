@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="32dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:src="@color/text_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ImageRound" />
+
+        <TextView
+            android:id="@+id/txtNotification"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/dummy_notif"
+            app:layout_constraintStart_toEndOf="@+id/profilePicture"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/dummy_notif_date"
+            android:textColor="@color/text_gray"
+            app:layout_constraintStart_toEndOf="@+id/txtNotification"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/arrow_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/previewComment"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/comment_prev_background"
+            android:text="@string/dummy_comm_preview"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintStart_toEndOf="@+id/profilePicture"
+            app:layout_constraintTop_toBottomOf="@+id/txtNotification" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

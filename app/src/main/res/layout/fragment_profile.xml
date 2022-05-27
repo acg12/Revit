@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/topAppBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:menu="@menu/profile_app_bar"
+                    app:navigationIcon="@mipmap/ic_logo"
+                    app:title="@string/profile"
+                    app:titleCentered="true" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:src="@color/text_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+                app:shapeAppearanceOverlay="@style/ImageRoundLarge" />
+
+            <TextView
+                android:id="@+id/btnEditProfPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/edit_prof_pic"
+                android:textColor="@color/main_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profilePicture" />
+
+            <TextView
+                android:id="@+id/lblUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/hint_username"
+                android:textColor="@color/text_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEditProfPic" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtUsername"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnEditProfPic">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/lblEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/hint_email"
+                android:textColor="@color/text_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtEmail"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtUsername">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/edit_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardSavedThreads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardElevation="0dp"
+                android:foregroundGravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/btnEditProfile">
+
+                <TextView
+                    android:id="@+id/lblSavedThreads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:text="@string/saved_threads" />
+
+                <TextView
+                    android:id="@+id/lblSavedCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="60dp"
+                    android:textAlignment="viewEnd"
+                    android:text="0" />
+
+                <ImageButton
+                    android:id="@+id/btnSavedThreads"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/arrow_next" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardElevation="0dp"
+                android:foregroundGravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/cardSavedThreads">
+
+                <TextView
+                    android:id="@+id/lblComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:text="@string/comments" />
+
+                <TextView
+                    android:id="@+id/lblCommentsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="60dp"
+                    android:textAlignment="viewEnd"
+                    android:text="0" />
+
+                <ImageButton
+                    android:id="@+id/btnCommentsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/arrow_next" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardLikedComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardElevation="0dp"
+                android:foregroundGravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/cardComments">
+
+                <TextView
+                    android:id="@+id/lblLikedComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:text="@string/liked_comments" />
+
+                <TextView
+                    android:id="@+id/lblLikedCommCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="60dp"
+                    android:textAlignment="viewEnd"
+                    android:text="0" />
+
+                <ImageButton
+                    android:id="@+id/btnLikedCommCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/arrow_next" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/Widget.App.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/logout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardLikedComments" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

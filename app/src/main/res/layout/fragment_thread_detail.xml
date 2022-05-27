@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentThreadDetail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/topAppBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:menu="@menu/plain_app_bar"
+                    app:navigationIcon="@drawable/back"
+                    app:titleCentered="true"/>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+                <ImageView
+                    android:id="@+id/imgCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/white" />
+
+                <ImageView
+                    android:id="@+id/imgFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@color/black_transparent" />
+
+                <LinearLayout
+                    android:id="@+id/linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="Hello"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:gravity="center"
+                        android:text="asdfasd"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:layout_alignBottom="@+id/imgCover"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_add"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/imgCover"
+                    android:layout_alignBottom="@id/imgCover"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/dummy_date"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="0 comments"
+                android:textColor="@color/dark_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativelayout" />
+
+            <ImageButton
+                android:id="@+id/iconSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_baseline_bookmark_border_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativelayout"
+                app:tint="@color/dark_blue" />
+
+            <TextView
+                android:id="@+id/tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:text="Tags: hello, world"
+                android:textColor="@color/dark_blue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/comments" />
+
+            <TextView
+                android:id="@+id/lblComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Comments"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tags" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/commentBody"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_comment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblComments">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/inputComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnAddComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/commentBody"
+                app:layout_constraintTop_toBottomOf="@+id/lblComments" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/commentBody" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
